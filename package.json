@@ -1,0 +1,22 @@
+{
+  "name": "symfony-react",
+  "version": "1.0.0",
+  "description": "symfonyReact ============",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "js-yaml": "^3.10.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-on-rails": "^10.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
