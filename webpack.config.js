@@ -6,6 +6,7 @@ Encore
   .addEntry('client', './client/entry.js')
   .enableSourceMaps(!Encore.isProduction())
   .cleanupOutputBeforeBuild()
-  .enableReactPreset();
+  .enableReactPreset()
+;
 
 module.exports = Encore.getWebpackConfig();

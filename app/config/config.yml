@@ -30,7 +30,8 @@ framework:
         save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
     fragments: ~
     http_method_override: true
-    assets: ~
+    assets:
+        json_manifest_path: '%kernel.root_dir%/../web/build/manifest.json'
     php_errors:
         log: true
 
@@ -71,5 +72,4 @@ swiftmailer:
 
 limenius_react:
     serverside_rendering:
-        fail_loud: true
         server_bundle_path: '%kernel.root_dir%/../web/build/client.js'
