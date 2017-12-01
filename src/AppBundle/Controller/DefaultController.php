@@ -13,9 +13,14 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-        ]);
+        $serializer = $this->get('serializer');
+        $posts = json_decode(file_get_contents("https://jsonplaceholder.typicode.com/posts"), true);
+
+        return $this->render(
+            'default/index.html.twig',
+            [
+                'props' => $serializer->serialize(['posts' => $posts], 'json'),
+            ]
+        );
     }
 }

@@ -7,13 +7,16 @@
     "test": "tests"
   },
   "dependencies": {
+    "babel-preset-react": "^6.24.1",
     "babel-runtime": "^6.26.0",
     "js-yaml": "^3.10.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-on-rails": "^10.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.17.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

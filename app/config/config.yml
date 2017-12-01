@@ -18,7 +18,8 @@ framework:
     form: ~
     csrf_protection: ~
     validation: { enable_annotations: true }
-    #serializer: { enable_annotations: true }
+    serializer:
+        enabled : true
     templating:
         engines: ['twig']
     default_locale: '%locale%'
@@ -67,3 +68,8 @@ swiftmailer:
     username: '%mailer_user%'
     password: '%mailer_password%'
     spool: { type: memory }
+
+limenius_react:
+    serverside_rendering:
+        fail_loud: true
+        server_bundle_path: '%kernel.root_dir%/../web/build/client.js'

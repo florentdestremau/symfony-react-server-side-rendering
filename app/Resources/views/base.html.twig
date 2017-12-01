@@ -8,6 +8,8 @@
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script src="{{ preload(asset('build/client.js')) }}"></script>
+        {% endblock %}
     </body>
 </html>
